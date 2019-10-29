@@ -7,7 +7,8 @@ setup_git() {
 
 commit_log_files() {
   git fetch
-  git checkout -b master
+  git checkout -b master --track origin/master
+  git pull
   git add . -- ./logs/*
   git commit --message "Travis download: $TRAVIS_BUILD_NUMBER"
 }
