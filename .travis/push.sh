@@ -5,13 +5,10 @@ setup_git() {
   git config --global user.name "Travis CI"
   git config --replace-all remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
   git fetch
-  for branch in $(git branch -r|grep -v HEAD) ; do
-    git checkout "${branch#origin/}"
-  done
 }
 
 commit_log_files() {
-  git checkout -b master
+  git checkout master
   git add . -- ./logs/*
   git commit --message "Travis download: $TRAVIS_BUILD_NUMBER"
 }
