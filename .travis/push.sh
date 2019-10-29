@@ -12,9 +12,8 @@ commit_log_files() {
 }
 
 upload_files() {
-  echo git remote add origin https://fakuivan:${GH_TOKEN}@github.com/fakuivan/facu-cammesa-logs.git # > /dev/null 2>&1
-  git remote -v
-  git push --quiet --set-upstream origin master
+  git remote add origin-token https://fakuivan:${GH_TOKEN}@github.com/fakuivan/facu-cammesa-logs.git > /dev/null 2>&1
+  git push --quiet --set-upstream origin-token master
 }
 
 setup_git
