@@ -1,0 +1,10 @@
+# ty https://gist.github.com/willprice/e07efd73fb7f13f917ea
+lang: minimal
+script:
+  - ./dothething.sh
+after_success:
+  - ./.travis/push.sh
+env:
+  global:
+    # GH_TOKEN="..."
+    secure: "P7vS7aYiXgHMPsaClYi1uh/laefvvv8PFiQlMOBBIlEAdanqiseHBkoML6eyqAmWLbzp+H5XoTSLUam5O8vRPid9HKQZ17iRqbnAtyVfpUPUC/qJ+w7TjFqtTlgyW+XxxEfshd3t3B+EQrdfLE5wzX8y//1My4she6k1gMmSu/jVIVU+iHC1ecOrb3s/DbFaOvy88p/g+WtkPLSHeYUDUtQzdYC2Le6EmMNB/MHIt9tnZD/TpGMFmTvuK3DlXyQ1u8CVrMRKRLSWZfFN+gs3GaoIS8MVMKkCgaRFu0QmXZrqGU2NUMSPzZtCTG1AiSgNvpgdi7wppYuyvteZbMxbhszrmSJ9HNQ9b0vcDh1QTmvR1Ji80iO176GjhPgcBHC55gLcUSGQfVcTe9ej+A2svXzLoNYoSnWAoeNC1eV0Rqsl56rgMqVPyelBeKPPH/mgW5/BmRNqFbZQYputZo0SXsg0ljrXsuau1OKe3RHJbgwlc3RqSY0398WgCUmajK8PMlwlOJvHCWGHhykOt7jJjEHsuMrCGdzi9Yihn4YVOgjzciWG2WFTz/Cf+yhGqhLB/X0PqvsclDA3j4j5Q1KIRIVUTTcElSyACmgF7kh0ccRqqNGb6CA1/hB1M9YB/1eCqj+XE4E0vfpcQZihKyf1q8YNJKd6GAHu1EsSREUXns4="
